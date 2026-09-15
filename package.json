@@ -1,0 +1,32 @@
+{
+  "name": "focuslane",
+  "version": "1.0.0",
+  "description": "A calm focus workspace with a Pomodoro timer and task queue.",
+  "private": true,
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^36.3.2",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "dev.yuin.focuslane",
+    "productName": "Focuslane",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "index.html",
+      "styles.css",
+      "app.js",
+      "desktop/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "portable",
+      "artifactName": "Focuslane-Portable-${version}.exe"
+    }
+  }
+}
