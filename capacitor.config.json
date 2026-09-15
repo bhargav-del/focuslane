@@ -1,0 +1,8 @@
+{
+  "appId": "dev.yuin.focuslane",
+  "appName": "Focuslane",
+  "webDir": "mobile-web",
+  "server": {
+    "androidScheme": "https"
+  }
+}
