@@ -1,7 +1,7 @@
 {
   "name": "focuslane",
   "version": "1.0.0",
-  "description": "A calm focus workspace with a Pomodoro timer and task queue.",
+  "description": "Pomodoro focus workspace with tasks, sessions, and daily progress.",
   "private": true,
   "main": "desktop/main.cjs",
   "scripts": {
