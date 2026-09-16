@@ -30,20 +30,12 @@
     ],
     "win": {
       "target": [
-        "nsis",
         "portable"
       ]
     },
     "asar": true,
     "portable": {
       "artifactName": "Focuslane-Portable-${version}.exe"
-    },
-    "nsis": {
-      "artifactName": "Focuslane-Setup-${version}.exe",
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true
     }
   }
 }
