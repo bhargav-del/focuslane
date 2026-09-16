@@ -1,7 +1,7 @@
 {
   "name": "focuslane",
-  "version": "1.0.0",
-  "description": "Pomodoro focus workspace with tasks, sessions, and daily progress.",
+  "version": "1.0.5",
+  "description": "Self-contained Windows desktop focus workspace with Pomodoro sessions and tasks.",
   "private": true,
   "main": "desktop/main.cjs",
   "scripts": {
@@ -29,8 +29,31 @@
       "package.json"
     ],
     "win": {
-      "target": "portable",
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "asar": true,
+    "portable": {
       "artifactName": "Focuslane-Portable-${version}.exe"
+    },
+    "nsis": {
+      "artifactName": "Focuslane-Setup-${version}.exe",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
     }
   }
 }
